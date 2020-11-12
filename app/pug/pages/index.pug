@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="css/main.css")
-        title Document
-    body
-        .header
-            h1 hello from pug!
-            h2 hey123
-        script(src='js/main.js')
+extends ../layouts/main.pug
+
+block variables
+    - const title = 'Главная'
+
+block content
+    h1 это главная страница
