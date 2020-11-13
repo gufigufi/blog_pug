@@ -33,7 +33,7 @@ gulp.task('pug', function (callback) {
 })
 
 gulp.task('sass', function (callback) {
-    return gulp.src('./app/sass/main.sass')
+    return gulp.src('./app/sass/main.scss')
 
         .pipe(plumber({
             errorHandler: notify.onError(function (err) {
@@ -80,7 +80,7 @@ gulp.task('watch', function () {
     // следим за картинками и скриптами, и обновляем браузер
     watch(['./build/js/**/*.*', './build/img/**/*.*'], gulp.parallel(browserSync.reload))
     // слежение за SASS и компиляция в CSS
-    watch('./app/sass/**/*.sass', gulp.parallel('sass'))
+    watch('./app/sass/**/*.scss', gulp.parallel('sass'))
 
     // в случае если возникает проблема что gulp перезапускает сервер быстрее чем файл успевает сохраниться
     // watch('./app/sass/**/*.sass', function () {
