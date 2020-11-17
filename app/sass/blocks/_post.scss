@@ -1,0 +1,39 @@
+.post {
+  padding:60px 0 40px;
+  border-bottom: 1px solid #dde2e7;
+}
+.post__title {
+  margin: 0 0 0 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 33px;
+  text-align: center;
+  color: #1a1a1a;
+}
+.post__info {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.post__img {
+  margin-bottom: 40px;
+}
+.post__img img{
+  width: 100%;
+}
+.post__content {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.post__read-more {}
+.post__share-icons {}
+
